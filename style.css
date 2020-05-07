@@ -56,3 +56,19 @@ ul#list_item {
     font-size: 35px;
     text-align: center;
 }
+
+#cityDiv {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+input[tyoe="text"] {
+    height: 40px;
+    font-size: 20px;
+}
+
+#submitCity {
+    height: 40px;
+    font-weight: bold;
+}
