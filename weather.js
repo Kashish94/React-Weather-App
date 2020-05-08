@@ -16,11 +16,41 @@ function getWeather() {
             type: "GET",
             dataType: "jsonp",
             success: function(data) {
-                console.log(data);
-                $("#showWeather").html(data);
+                var widget = showResults(data);
+                $("#showWeather").html(widget);
+
+                $("#city").val("");
             },
         });
     } else {
         $("#error").html("<div>City field cannot be empty</div>");
     }
+}
+
+function showResults(data) {
+    return (
+        "<h3>Current Weather for " +
+        data.name +
+        ", " +
+        data.sys.country +
+        "</h3>" +
+        "<p>Temperature: " +
+        data.main.temp +
+        "&deg;C</p>" +
+        "<p>Humidity: " +
+        data.main.humidity +
+        "</p>" +
+        "<p>Pressure: " +
+        data.main.pressure +
+        "</p>" +
+        "<p>Temperature: " +
+        data.main.temp_min +
+        "</p>" +
+        "<p>Temperature: " +
+        data.main.temp_max +
+        "</p>" +
+        "<p>Wind Speed: " +
+        data.wind.speed +
+        "</p>"
+    );
 }
