@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Weather App</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
     <link rel="stylesheet" href="style.css">
 
@@ -48,10 +48,13 @@
         <div class="row">
             <div class="col-md-12">
                 <h3 class="text-center text-primary">Enter City Name</h3>
+                <spsm id="error" class="text-center">
+                    </span>
+
             </div>
 
             <div class="row form-group form-inline" id="cityDiv">
-                <input type="text" name="city" id="city" class="form-control" placeholder="Enter city name">
+                <input type="text" name="city" id="city" class="form-control" placeholder="Enter city name" style="margin-top:10px;">
                 <button id="submitCity" class="btn btn-primary">Search City</button>
             </div>
 
@@ -60,8 +63,8 @@
         <div id="showWeather"></div>
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZzUPnCJA7l2mCWNIpGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="weather.js"></script>
 
 </body>

@@ -23,7 +23,9 @@ function getWeather() {
             },
         });
     } else {
-        $("#error").html("<div>City field cannot be empty</div>");
+        $("#error").html(
+            "<div class='alert alert-danger alert-dismissible' id='errorCity'><a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a> City field cannot be empty</div>"
+        );
     }
 }
 
@@ -34,23 +36,32 @@ function showResults(data) {
         ", " +
         data.sys.country +
         "</h3>" +
+        "<p>Weather: " +
+        data.weather[0].main +
+        "</p>" +
+        "<p>Weathe Description: " +
+        data.weather[0].description +
+        "</p>" +
         "<p>Temperature: " +
         data.main.temp +
         "&deg;C</p>" +
         "<p>Humidity: " +
         data.main.humidity +
-        "</p>" +
+        "%</p>" +
         "<p>Pressure: " +
         data.main.pressure +
-        "</p>" +
-        "<p>Temperature: " +
+        " hpa</p>" +
+        "<p>Min Temperature: " +
         data.main.temp_min +
-        "</p>" +
-        "<p>Temperature: " +
+        "&deg;C</p>" +
+        "<p>Max Temperature: " +
         data.main.temp_max +
-        "</p>" +
+        "&deg;C</p>" +
         "<p>Wind Speed: " +
         data.wind.speed +
-        "</p>"
+        "m/s</p>" +
+        "<p>Wind Direction: " +
+        data.wind.deg +
+        "&deg;C</p>"
     );
 }

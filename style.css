@@ -72,3 +72,9 @@ input[tyoe="text"] {
     height: 40px;
     font-weight: bold;
 }
+
+#errorCity {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
