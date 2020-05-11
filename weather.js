@@ -31,37 +31,39 @@ function getWeather() {
 
 function showResults(data) {
     return (
-        "<h3>Current Weather for " +
+        '<h2 style="font-weight:bold; font-size:30px; padding-top:20px;" class="text-center">Current Weather for ' +
         data.name +
         ", " +
         data.sys.country +
-        "</h3>" +
-        "<p>Weather: " +
+        "</h2>" +
+        "<h3 style='padding-left:40px;'><strong>Weather</strong>: " +
         data.weather[0].main +
-        "</p>" +
-        "<p>Weathe Description: " +
+        "</h3>" +
+        "<h3 style='padding-left:40px;'><strong>Description</strong>:<img src='http://openweathermap.org/img/wn/" +
+        data.weather[0].icon +
+        ".png'>" +
         data.weather[0].description +
-        "</p>" +
-        "<p>Temperature: " +
+        "</h3>" +
+        "<h3 style='padding-left:40px;'><strong>Temperature: </strong>" +
         data.main.temp +
-        "&deg;C</p>" +
-        "<p>Humidity: " +
+        "&deg;C</h3>" +
+        "<h3 style='padding-left:40px;'><strong>Humidity: <strong>" +
         data.main.humidity +
-        "%</p>" +
-        "<p>Pressure: " +
+        "%</h3>" +
+        "<h3 style='padding-left:40px;'><strong>Pressure: </strong>" +
         data.main.pressure +
-        " hpa</p>" +
-        "<p>Min Temperature: " +
+        " hpa</h3>" +
+        "<h3 style='padding-left:40px;'><strong>Min Temperature: </strong>" +
         data.main.temp_min +
-        "&deg;C</p>" +
-        "<p>Max Temperature: " +
+        "&deg;C</h3>" +
+        "<h3 style='padding-left:40px;'><strong>Max Temperature: </strong>" +
         data.main.temp_max +
-        "&deg;C</p>" +
-        "<p>Wind Speed: " +
+        "&deg;C</h3>" +
+        "<h3 style='padding-left:40px;'><strong>Wind Speed: </strong>" +
         data.wind.speed +
-        "m/s</p>" +
-        "<p>Wind Direction: " +
+        "m/s</h3>" +
+        "<h3 style='padding-left:40px; padding-bottom:30px;'><strong>Wind Direction: </strong>" +
         data.wind.deg +
-        "&deg;C</p>"
+        "&deg;C</h3>"
     );
 }

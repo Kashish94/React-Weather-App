@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Weather App</title>
+    <title>Weather App - Forecast</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
     <link rel="stylesheet" href="style.css">
@@ -14,7 +14,7 @@
     <nav class="navbar navbar-default" id="nav_bar">
         <div class="container">
             <div class="navbar-header">
-                <a href="" class="navbar-brand navbar-link weather">
+                <a href="index.html" class="navbar-brand navbar-link weather">
                     <img src="images/logo.png" class="img-responsive" id="logo" alt=""><strong>Weather App</strong>
                 </a>
                 <button class="navbar-toggle collapsed" data toggle="collapse" data-target="navcol">
@@ -33,27 +33,38 @@
                         <a href="forecast.html">Forecast</a>
                     </li>
                     <li>
-                        <a href="http://www.openweathermap.org" target="blank">Open Weather Map</a>
+                        <a href="">Open Weather Map</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="row" id="headRow">
-        <div class="col-md-12" id="colText">
-            <h2 class="text-center" id="colHeadText1">The most simplest weather app.It's simple.</h2>
-            <h1 class="text-center" id="colHeadText2">Get weather information of any city.</h1>
-
-            <ul class="list-inline" id="list_item">
-                <li>Temperature</li>
-                <li>Humidity</li>
-                <li>Pressure</li>
-                <li>Windspeed</li>
-            </ul>
-        </div>
+    <div class="jumbotron" style="margin-bottom: 0px; background-color: #4aa1f3; color:white;">
+        <h2 class="text-center" style="font-size:40px; font-weight:600;">Get Weather Forecast</h2>
     </div>
-    <div class="footer" style="margin-top: 142px;">
+
+    <div class="container" style="height:650px;">
+        <div class="row">
+            <div class="col-md-12" style="margin-bottom:10px;">
+                <h3 class="text-center text-primary">Enter City Name</h3>
+                <spsm id="error" class="text-center">
+                    </span>
+
+            </div>
+
+            <div class="row form-group form-inline" id="cityDiv">
+                <input type="text" name="city" id="city" class="form-control" placeholder="Enter city name" style="margin-top:10px;">
+                <input type="text" name="days" id="days" class="form-control" placeholder="Number: Min - 1 & Max - 16" style="margin-top:10px;">
+                <button id="submitForecast" class="btn btn-primary">Search City</button>
+            </div>
+
+        </div>
+        <div id="error"></div>
+        <div id="showWeather"></div>
+    </div>
+
+    <div class="footer">
         <div class="container">
             <div class="row text-center" style="padding-top: 30px;">
                 <p style="color: white">Copyright &copy; Weather App</p>
@@ -62,6 +73,8 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="weather.js"></script>
+
 </body>
 
 </html>
