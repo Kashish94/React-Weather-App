@@ -48,7 +48,7 @@
         <div class="row">
             <div class="col-md-12" style="margin-bottom:10px;">
                 <h3 class="text-center text-primary">Enter City Name</h3>
-                <spsm id="error" class="text-center">
+                <span id="error" class="text-center">
                     </span>
 
             </div>
@@ -60,8 +60,29 @@
             </div>
 
         </div>
-        <div id="error"></div>
-        <div id="showWeather"></div>
+
+
+        <div class="row">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Icon</th>
+                        <th>Weather</th>
+                        <th>Description</th>
+                        <th>Min. Temperature</th>
+                        <th>Max Temperature</th>
+                        <th>Pressure</th>
+                        <th>Humidity</th>
+                        <th>Wind Speed</th>
+                        <th>Wind Direction</th>
+                    </tr>
+                </thead>
+
+                <tbody id="forecastWeather">
+
+                </tbody>
+            </table>
+        </div>
     </div>
 
     <div class="footer">
@@ -73,7 +94,7 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script src="weather.js"></script>
+    <script src="forecast.js"></script>
 
 </body>
 
