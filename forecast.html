@@ -44,7 +44,7 @@
         <h2 class="text-center" style="font-size:40px; font-weight:600;">Get Weather Forecast</h2>
     </div>
 
-    <div class="container" style="height:650px;">
+    <div class="container" style="height:850px;">
         <div class="row">
             <div class="col-md-12" style="margin-bottom:10px;">
                 <h3 class="text-center text-primary">Enter City Name</h3>
@@ -55,15 +55,18 @@
 
             <div class="row form-group form-inline" id="cityDiv">
                 <input type="text" name="city" id="city" class="form-control" placeholder="Enter city name" style="margin-top:10px;">
-                <input type="text" name="days" id="days" class="form-control" placeholder="Number: Min - 1 & Max - 16" style="margin-top:10px;">
-                <button id="submitForecast" class="btn btn-primary">Search City</button>
+                <input type="text" name="days" id="days" class="form-control" placeholder="Number: Min - 1 & Max - 5" style="margin-top:10px;">
+                <button id="submitForecast" class="btn btn-primary" style="margin-top:10px;">Search City</button>
             </div>
 
         </div>
 
 
-        <div class="row">
+        <div class="row" style="margin-top:30px;">
             <table class="table table-bordered">
+                <div id="header class=" text-center ">
+
+                </div>
                 <thead>
                     <tr>
                         <th>Icon</th>
@@ -78,23 +81,23 @@
                     </tr>
                 </thead>
 
-                <tbody id="forecastWeather">
+                <tbody id="forecastWeather ">
 
                 </tbody>
             </table>
         </div>
     </div>
 
-    <div class="footer">
-        <div class="container">
-            <div class="row text-center" style="padding-top: 30px;">
-                <p style="color: white">Copyright &copy; Weather App</p>
+    <div class="footer ">
+        <div class="container ">
+            <div class="row text-center " style="padding-top: 30px; ">
+                <p style="color: white ">Copyright &copy; Weather App</p>
             </div>
         </div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script src="forecast.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js "></script>
+    <script src="forecast.js "></script>
 
 </body>
 
