@@ -115,3 +115,10 @@ td {
     text-align: center;
     font-size: 18px;
 }
+
+#welcome-paragraph {
+    font-size: 20px;
+    font-weight: normal;
+    padding: 12px 25px 40px 25 px;
+    letter-spacing: 0.5px;
+}
