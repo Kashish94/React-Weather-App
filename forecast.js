@@ -39,8 +39,8 @@ function getForecast() {
                     table += "<td>" + data.list[i].weather[0].description + "</td>";
                     table += "<td>" + data.list[i].main.temp_min + "&deg;C</td>";
                     table += "<td>" + data.list[i].main.temp_max + "&deg;C</td>";
-                    table += "<td>" + data.list[i].main.pressure + "&hPa</td>";
-                    table += "<td>" + data.list[i].main.humidity + "&%</td>";
+                    table += "<td>" + data.list[i].main.pressure + "hPa</td>";
+                    table += "<td>" + data.list[i].main.humidity + "%</td>";
                     table += "<td>" + data.list[i].wind.speed + "m/s</td>";
                     table += "<td>" + data.list[i].wind.deg + "&deg;C</td>";
 
