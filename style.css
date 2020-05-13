@@ -43,13 +43,14 @@ body {
 #colHeadText1 {
     color: white;
     padding-top: 30px;
-    font-size: 50px;
+    font-size: 45px;
 }
 
 #colHeadText2 {
     color: white;
     padding-top: 20px;
     padding-bottom: 30px;
+    font-size: 50px;
 }
 
 ul#list_item {
@@ -119,6 +120,59 @@ td {
 #welcome-paragraph {
     font-size: 20px;
     font-weight: normal;
-    padding: 12px 25px 40px 25 px;
+    padding: 12px 25px 40px 25px;
     letter-spacing: 0.5px;
+}
+
+#row-div{
+    margin: auto;
+    width: 100%;
+}
+
+#colDesc h3{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+#colDesc{
+    border: 1px solid #e7e7e7;
+    margin: 0 auto;
+    height: auto;
+}
+
+.info-icon{
+    text-align: center;
+}
+
+.info-icon i{
+    font-size: 60px;
+    margin-top: 10px;
+    color: #4aa1f3;
+}
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink{
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@-webkit-keyframes blink{
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@-moz-keyframes blink{
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
 }
