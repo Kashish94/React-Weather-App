@@ -101,51 +101,44 @@
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
             <!-- <script src="https://code.jquery.com/jquery-3.5.1.js"></script> -->
             <script src="typed.js"></script>
-
+            <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
             <script>
-                $(document).ready(function(){
-                    setTimeout(function(){
-                        $("#colHeadText1").typed({
-                            strings: ["The most simplest weather app.It's simple."],
-                            typeSpeed: 40
-                        })
-                    }, 0);
 
-                    setTimeout(function(){
-                        $("#colHeadText2").typed({
-                            strings:["Get weather information of any city."],
-                            typeSpeed: 50
-                        })
-                    }, 2000);
+            var typed =new Typed('#colHeadText1', {
+                strings: ["The most simplest weather app.It's simple."],
+                typeSpeed: 40,
+                startDelay:0,
+            });
 
-                    setTimeout(function(){
-                        $("#list1").typed({
-                            strings: ["Temperature"],
-                            typeSpeed: 50
-                        })
-                    }, 4000);
+            var typed =new Typed('#colHeadText2', {
+                strings:["Get weather information of any city."],
+                typeSpeed: 50,
+                startDelay: 2000,
+            });
 
-                    setTimeout(function(){
-                        $("#list2").typed({
-                            strings: ["Pressure"],
-                            typeSpeed: 50
-                        })
-                    }, 6000);
+            var typed =new Typed('#list1', {
+            strings: ["Temperature"],
+            typeSpeed: 50,
+            startDelay: 4000,
+            });
 
-                    setTimeout(function(){
-                        $("#list3").typed({
-                            strings: ["Wind Speed"],
-                            typeSpeed: 50
-                        })
-                    }, 8000);
-                    
-                    setTimeout(function(){
-                        $("#list4").typed({
-                            strings: ["Humidity"],
-                            typeSpeed: 50
-                        })
-                    }, 10000);
-                });
+            var typed =new Typed('#list2', {
+            strings: ["Pressure"],
+            typeSpeed: 50,
+            startDelay: 6000,
+            });
+
+            var typed =new Typed('#list3', {
+            strings: ["Wind Speed"],
+            typeSpeed: 50,
+            startDelay: 8000,
+            });
+
+            var typed =new Typed('#list4', {
+            strings: ["Humidity"],
+            typeSpeed: 50,
+            startDelay: 10000,
+            });
             </script>
-</body>
-</html>
+            </body>
+            </html>
